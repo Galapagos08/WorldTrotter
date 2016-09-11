@@ -1,20 +1,15 @@
 //
-//  ViewController.m
+//  ViewController.h
 //  WorldTrotter
 //
 //  Created by Dan Esrey on 2016/11/09.
 //  Copyright © 2016 Dan Esrey. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-
+@interface ConversionViewController : UIViewController
 
 
 @end
+

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F712443B1D85ACD000D5399C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F712443A1D85ACD000D5399C /* main.m */; };
 		F712443E1D85ACD000D5399C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F712443D1D85ACD000D5399C /* AppDelegate.m */; };
-		F71244411D85ACD000D5399C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71244401D85ACD000D5399C /* ViewController.m */; };
+		F71244411D85ACD000D5399C /* ConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71244401D85ACD000D5399C /* ConversionViewController.m */; };
 		F71244441D85ACD000D5399C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71244421D85ACD000D5399C /* Main.storyboard */; };
 		F71244461D85ACD000D5399C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71244451D85ACD000D5399C /* Assets.xcassets */; };
 		F71244491D85ACD000D5399C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71244471D85ACD000D5399C /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		F712443A1D85ACD000D5399C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F712443C1D85ACD000D5399C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F712443D1D85ACD000D5399C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F712443F1D85ACD000D5399C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F71244401D85ACD000D5399C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F712443F1D85ACD000D5399C /* ConversionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConversionViewController.h; sourceTree = "<group>"; };
+		F71244401D85ACD000D5399C /* ConversionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConversionViewController.m; sourceTree = "<group>"; };
 		F71244431D85ACD000D5399C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F71244451D85ACD000D5399C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F71244481D85ACD000D5399C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			children = (
 				F712443C1D85ACD000D5399C /* AppDelegate.h */,
 				F712443D1D85ACD000D5399C /* AppDelegate.m */,
-				F712443F1D85ACD000D5399C /* ViewController.h */,
-				F71244401D85ACD000D5399C /* ViewController.m */,
+				F712443F1D85ACD000D5399C /* ConversionViewController.h */,
+				F71244401D85ACD000D5399C /* ConversionViewController.m */,
 				F71244421D85ACD000D5399C /* Main.storyboard */,
 				F71244451D85ACD000D5399C /* Assets.xcassets */,
 				F71244471D85ACD000D5399C /* LaunchScreen.storyboard */,
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71244411D85ACD000D5399C /* ViewController.m in Sources */,
+				F71244411D85ACD000D5399C /* ConversionViewController.m in Sources */,
 				F712443E1D85ACD000D5399C /* AppDelegate.m in Sources */,
 				F712443B1D85ACD000D5399C /* main.m in Sources */,
 			);
@@ -514,6 +514,7 @@
 				F71244651D85ACD000D5399C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F71244661D85ACD000D5399C /* Build configuration list for PBXNativeTarget "WorldTrotterTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +523,7 @@
 				F71244681D85ACD000D5399C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F71244691D85ACD000D5399C /* Build configuration list for PBXNativeTarget "WorldTrotterUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +532,7 @@
 				F712446B1D85ACD000D5399C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
