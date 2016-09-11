@@ -8,7 +8,7 @@
 
 #import "ConversionViewController.h"
 
-@interface ConversionViewController ()
+@interface ConversionViewController () <UITextFieldDelegate>
 
 @property (nonatomic) IBOutlet UILabel *celsiusLabel;
 @property (nonatomic) IBOutlet UITextField *fahrenheitField;
@@ -61,5 +61,19 @@
     return formatter;
 }
 
+// MARK: - Text Field Delegate
+- (BOOL)textField:(UITextField *)textField
+shouldChangeCharactersInRange:(NSRange)range
+replacementString:(NSString *)string {
+    NSRange existingRange = [textField.text rangeOfString:@"."];
+    BOOL hasExistingDecimalSeparator = (existingRange.location != NSNotFound);
+    NSRange newRange = [string rangeOfString:@"."];
+    BOOL wantsNewDecimalSeparator = (newRange.location != NSNotFound);
+    if (hasExistingDecimalSeparator && wantsNewDecimalSeparator) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
 
 @end
