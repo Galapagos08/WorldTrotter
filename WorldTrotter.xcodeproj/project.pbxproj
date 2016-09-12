@@ -16,6 +16,7 @@
 		F71244541D85ACD000D5399C /* WorldTrotterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F71244531D85ACD000D5399C /* WorldTrotterTests.m */; };
 		F712445F1D85ACD000D5399C /* WorldTrotterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F712445E1D85ACD000D5399C /* WorldTrotterUITests.m */; };
 		F770B8D21D870D2E0044FD1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F770B8D11D870D2E0044FD1B /* MapKit.framework */; };
+		F770B8DC1D871C390044FD1B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F770B8DB1D871C390044FD1B /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		F712445E1D85ACD000D5399C /* WorldTrotterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorldTrotterUITests.m; sourceTree = "<group>"; };
 		F71244601D85ACD000D5399C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F770B8D11D870D2E0044FD1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F770B8D31D871BA90044FD1B /* WorldTrotter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorldTrotter-Bridging-Header.h"; sourceTree = "<group>"; };
+		F770B8DA1D871C390044FD1B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
+		F770B8DB1D871C390044FD1B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +113,14 @@
 				F712443D1D85ACD000D5399C /* AppDelegate.m */,
 				F712443F1D85ACD000D5399C /* ConversionViewController.h */,
 				F71244401D85ACD000D5399C /* ConversionViewController.m */,
+				F770B8DA1D871C390044FD1B /* MapViewController.h */,
+				F770B8DB1D871C390044FD1B /* MapViewController.m */,
 				F71244421D85ACD000D5399C /* Main.storyboard */,
 				F71244451D85ACD000D5399C /* Assets.xcassets */,
 				F71244471D85ACD000D5399C /* LaunchScreen.storyboard */,
 				F712444A1D85ACD000D5399C /* Info.plist */,
 				F71244391D85ACD000D5399C /* Supporting Files */,
+				F770B8D31D871BA90044FD1B /* WorldTrotter-Bridging-Header.h */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -220,6 +227,7 @@
 					F71244351D85ACD000D5399C = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6EFGV8H972;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					F712444E1D85ACD000D5399C = {
@@ -291,6 +299,7 @@
 				F71244411D85ACD000D5399C /* ConversionViewController.m in Sources */,
 				F712443E1D85ACD000D5399C /* AppDelegate.m in Sources */,
 				F712443B1D85ACD000D5399C /* main.m in Sources */,
+				F770B8DC1D871C390044FD1B /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,11 +446,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greybeard.WorldTrotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorldTrotter/WorldTrotter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -449,11 +462,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6EFGV8H972;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greybeard.WorldTrotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorldTrotter/WorldTrotter-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
