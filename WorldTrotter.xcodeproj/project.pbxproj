@@ -17,6 +17,7 @@
 		F712445F1D85ACD000D5399C /* WorldTrotterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F712445E1D85ACD000D5399C /* WorldTrotterUITests.m */; };
 		F770B8D21D870D2E0044FD1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F770B8D11D870D2E0044FD1B /* MapKit.framework */; };
 		F770B8DC1D871C390044FD1B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F770B8DB1D871C390044FD1B /* MapViewController.m */; };
+		F7C4A5DD1D8748BF00F09F9A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7C4A5DF1D8748BF00F09F9A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,12 @@
 		F770B8D31D871BA90044FD1B /* WorldTrotter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorldTrotter-Bridging-Header.h"; sourceTree = "<group>"; };
 		F770B8DA1D871C390044FD1B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
 		F770B8DB1D871C390044FD1B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
+		F770B8DE1D8743CB0044FD1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F770B8DF1D87442C0044FD1B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		F770B8E01D87442D0044FD1B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F7C4A5DE1D8748BF00F09F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7C4A5E01D8748C200F09F9A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7C4A5E11D8748C300F09F9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +122,7 @@
 				F71244401D85ACD000D5399C /* ConversionViewController.m */,
 				F770B8DA1D871C390044FD1B /* MapViewController.h */,
 				F770B8DB1D871C390044FD1B /* MapViewController.m */,
+				F7C4A5DF1D8748BF00F09F9A /* Localizable.strings */,
 				F71244421D85ACD000D5399C /* Main.storyboard */,
 				F71244451D85ACD000D5399C /* Assets.xcassets */,
 				F71244471D85ACD000D5399C /* LaunchScreen.storyboard */,
@@ -251,6 +259,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = F712442D1D85ACD000D5399C;
 			productRefGroup = F71244371D85ACD000D5399C /* Products */;
@@ -270,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F71244491D85ACD000D5399C /* LaunchScreen.storyboard in Resources */,
+				F7C4A5DD1D8748BF00F09F9A /* Localizable.strings in Resources */,
 				F71244461D85ACD000D5399C /* Assets.xcassets in Resources */,
 				F71244441D85ACD000D5399C /* Main.storyboard in Resources */,
 			);
@@ -339,6 +349,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F71244431D85ACD000D5399C /* Base */,
+				F770B8DE1D8743CB0044FD1B /* en */,
+				F770B8DF1D87442C0044FD1B /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -347,8 +359,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				F71244481D85ACD000D5399C /* Base */,
+				F770B8E01D87442D0044FD1B /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F7C4A5DF1D8748BF00F09F9A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7C4A5DE1D8748BF00F09F9A /* Base */,
+				F7C4A5E01D8748C200F09F9A /* es */,
+				F7C4A5E11D8748C300F09F9A /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -358,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -405,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
